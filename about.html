@@ -1,0 +1,309 @@
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About Me | Azam</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+background-color: #f4f6f9;
+color: #222;
+background:
+linear-gradient(rgba(10, 20, 40, 0.65), rgba(10, 20, 40, 0.65)),
+url('29.webp') center/cover no-repeat fixed;
+
+}
+main { flex: 1;
+}
+
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: #1f3c88;
+padding: 1rem 2rem;
+}
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+}
+.logo {
+font-size: 1.5rem;
+font-weight: 600;
+color: #fff;
+}
+.nav-links {
+list-style: none;
+display: flex;
+gap: 1.25rem;
+margin: 0;
+padding: 0;
+}
+.nav-links a {
+text-decoration: none;
+color: #fff;
+font-weight: 400;
+transition: color 0.3s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #ffd700;
+}
+
+.about-section {
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: center;
+padding: 3rem 1.5rem;
+max-width: 1200px;
+margin: auto;
+}
+
+.about-image {
+flex: 1 1 400px;
+padding: 1rem;
+}
+.about-image img {
+width: 100%;
+border-radius: 12px;
+box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.about-content {
+flex: 1 1 500px;
+padding: 1rem 2rem;
+}
+.about-content h2 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+color: #F5F5F5;
+}
+.about-content p {
+font-size: 1.1rem;
+line-height: 1.7;
+margin-bottom: 1.5rem;
+color: #F5F5F5;
+}
+
+.skills {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 1.5rem;
+margin-top: 2rem;
+}
+.skill-box {
+background: #1f3c88;
+color: #fff;
+padding: 1rem;
+border-radius: 8px;
+box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+.skill-box h3 {
+margin: 0 0 0.75rem;
+font-size: 1.2rem;
+font-weight: 600;
+}
+
+.progress {
+background: rgba(255,255,255,0.2);
+border-radius: 6px;
+overflow: hidden;
+height: 24px;
+}
+.progress-bar {
+background: #ffd700;
+color: #1f3c88;
+font-weight: 600;
+text-align: center;
+height: 100%;
+line-height: 24px;
+transition: width 0.5s ease;
+}
+
+.favorites {
+max-width: 1200px;
+margin: 3rem auto;
+padding: 0 1.5rem;
+color: #F5F5F5;
+}
+.favorites h2 {
+font-size: 2rem;
+color: #F5F5F5;;
+margin-bottom: 1.5rem;
+text-align: center;
+}
+.fav-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+justify-items: center;
+}
+.fav-item {
+text-align: center;
+}
+.fav-item img {
+width: 100%;
+max-width: 300px;
+border-radius: 12px;
+box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+cursor: pointer;
+}
+.fav-item audio,
+.fav-item video {
+margin-top: 1rem;
+width: 100%;	
+max-width: 300px;
+border-radius: 8px;
+}
+.btn {
+display: inline-block;
+padding: 0.75rem 1.5rem;
+background: #ffd700;
+color: #1f3c88;
+font-weight: 600;
+border-radius: 6px;
+text-decoration: none;
+transition: transform 0.15s ease, background 0.2s ease;
+box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover { background: #ffc107; transform: translateY(-1px); }
+
+footer {
+background: #1f3c88;
+color: #fff;
+text-align: center;
+padding: 1rem;
+margin-top: 3rem;
+}
+.media-player {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Make audio player taller by wrapping it */
+.audio-wrapper {
+  background: #1f3c88; /* match your theme */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 300px;
+  height: 200px; /* set desired height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.audio-wrapper audio {
+  width: 100%;
+}
+#moviePlayer.media-player {
+  height: auto; /* let video keep aspect ratio */
+}
+
+@media (max-width: 768px) {
+.about-section {
+flex-direction: column;
+}
+.about-content {
+padding: 1rem;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<nav class="navbar">
+<div class="logo">Azam</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html" class="active">About</a></li>
+<li><a href="education.html">Education</a></li>
+<li><a href="achievements.html">Achievements</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="about-section">
+<div class="about-image">
+<img src="2.jpeg" alt="Azam working in studio">
+</div>
+<div class="about-content">
+<h2>About Me</h2>
+<p>
+I am a mechanical engineering student with a strong passion for innovation, problem‑solving, and practical design. My academic journey has equipped me with a solid foundation in engineering principles, while hands‑on projects and competitions have sharpened my ability to apply theory to real‑world challenges. I enjoy exploring how mechanical systems work, and I am driven by the idea of creating solutions that are both efficient and impactful.
+</p>
+<p>
+Beyond academics, I am committed to continuous learning and growth. Whether it’s collaborating on team projects, presenting achievements, or engaging in STEM‑related activities, I strive to showcase not only my technical skills but also my creativity and dedication. This portfolio reflects my journey, highlighting the milestones that define me as an aspiring engineer ready to take on future challenges.
+</p>
+
+<div class="skills">
+<div class="skill-box">
+<h3>Computer Aided Design (CAD)</h3>
+<div class="progress"><div class="progress-bar" style="width:65%">65%</div></div>
+</div>
+<div class="skill-box">
+<h3>Onshape</h3>
+<div class="progress"><div class="progress-bar" style="width:50%">50%</div></div>
+</div>
+<div class="skill-box">
+<h3>Business Management</h3>
+<div class="progress"><div class="progress-bar" style="width:70%">70%</div></div>
+</div>
+<div class="skill-box">
+<h3>Java & Python</h3>
+<div class="progress"><div class="progress-bar" style="width:50%">50%</div></div>
+</div>
+<div class="skill-box">
+<h3>Project Management</h3>
+<div class="progress"><div class="progress-bar" style="width:70%">70%</div></div>
+</div>
+<div class="skill-box">
+<h3>Microsoft Soft Skills (Excel, Word, PowerPoint)</h3>
+<div class="progress"><div class="progress-bar" style="width:70%">70%</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="favorites">
+  <h2>My Favorites</h2>
+  <div class="fav-grid">
+
+    <div class="fav-item">
+      <h3>Favorite Music</h3>
+      <img src="25.webp" alt="Favorite Music Thumbnail" onclick="document.getElementById('musicPlayer').play()">
+      <audio id="musicPlayer" controls class="media-player">
+        <source src="26.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="fav-item">
+      <h3>Favorite Movie</h3>
+      <img src="27.webp" alt="Favorite Movie Thumbnail" onclick="document.getElementById('moviePlayer').play()">
+      <video id="moviePlayer" controls class="media-player">
+        <source src="28.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </div>
+
+  </div>
+</section>
+<footer>
+<p>&copy; 2026 Elite Lemirence (Aliy)	. All rights served For IMD318 Assignment Purpose</p>
+</footer>
+</body>
+</html>

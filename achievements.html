@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Achievements | Azam</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+background-color: #f4f6f9;
+color: #222;
+background:
+linear-gradient(rgba(10, 20, 40, 0.65), rgba(10, 20, 40, 0.65)),
+url('31.JPG') center/cover no-repeat fixed;
+}
+
+/* Navigation bar */
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: #1f3c88;
+padding: 1rem 2rem;
+}
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+}
+.logo {
+font-size: 1.5rem;
+font-weight: 600;
+color: #fff;
+}
+.nav-links {
+list-style: none;
+display: flex;
+gap: 1.25rem;
+margin: 0;
+padding: 0;
+}
+.nav-links a {
+text-decoration: none;
+color: #fff;
+font-weight: 400;
+transition: color 0.3s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #ffd700;
+}
+
+/* Achievements section */
+.achievements-section {
+max-width: 1200px;
+margin: 3rem auto;
+padding: 0 1.5rem;
+}
+.achievements-section h2 {
+font-size: 2.5rem;
+color: #F5F5F5;
+margin-bottom: 2rem;
+text-align: center;
+}
+
+.board {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+gap: 2rem;
+}
+
+.card {
+position: relative;
+overflow: hidden;
+border-radius: 12px;
+box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+cursor: pointer;
+height: 350px; /* fixed height for consistency */
+}
+
+.card img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+transition: opacity 0.5s ease;
+}
+
+.card .content {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(31,60,136,0.95);
+color: #fff;
+padding: 1.5rem;
+opacity: 0;
+transition: opacity 0.5s ease;
+overflow-y: auto;
+}
+
+.card:hover img {
+opacity: 0;
+}
+.card:hover .content {
+opacity: 1;
+}
+
+.content h3 {
+margin-top: 0;
+font-size: 1.3rem;
+color: #ffd700;
+}
+.content p {
+font-size: 0.95rem;
+line-height: 1.6;
+}
+
+/* Footer */
+footer {
+background: #1f3c88;
+color: #fff;
+text-align: center;
+padding: 1rem;
+margin-top: 3rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+.board {
+grid-template-columns: 1fr;
+}
+.card {
+height: 300px;
+}
+}
+</style>
+</head>
+<body>
+<!-- Navigation -->
+<header>
+<nav class="navbar">
+<div class="logo">Azam</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="education.html">Education</a></li>
+<li><a href="achievements.html" class="active">Achievements</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- Achievements Section -->
+<section class="achievements-section">
+<h2>Achievements</h2>
+<div class="board">
+
+<!-- Achievement 1 -->
+<div class="card">
+<img src="6.jpg" alt="P&ID Session">
+<div class="content">
+<h3>🌟 P&ID Knowledge Sharing Session ⚙️📊</h3>
+<p>On 6 November 2024, I attended a P&ID knowledge-sharing session delivered by IRSO Sabah, PETRONAS. The session provided valuable insights into fundamentals and practical applications of P&ID in industrial operations.</p>
+<p>A sincere appreciation to IRSO Sabah, PETRONAS for sharing their expertise and industry experience.</p>
+</div>
+</div>
+
+<!-- Achievement 2 -->
+<div class="card">
+<img src="7.jpg" alt="STEM Babagon">
+<div class="content">
+<h3>🌟 Continuing the Journey of Empowering Young Minds through STEM 🔬⚙️📐💡</h3>
+<p>On 30 November 2024, I served as Director of Laskar STEM for the second time, held at Sekolah Kebangsaan Babagon, Penampang, Sabah.</p>
+<p>Objectives included fostering early interest in STEM, increasing enrolment in science programs, and raising awareness of STEM’s role in everyday life.</p>
+<p>Witnessing the students’ excitement and curiosity was truly inspiring.</p>
+</div>
+</div>
+
+<!-- Achievement 3 -->
+<div class="card">
+<img src="8.jpg" alt="STEM Tuaran">
+<div class="content">
+<h3>🌟 Igniting Young Minds with STEM! 🔬⚙️📐💡</h3>
+<p>On 8 June 2024, I served as Director of Laskar STEM, held at Sekolah Agama Suria, Tuaran, Sabah.</p>
+<p>The program promoted STEM through engaging methods, inspiring students to pursue science streams and raising awareness of STEM’s importance.</p>
+<p>It was inspiring to witness the excitement and curiosity of students as they explored STEM.</p>
+</div>
+</div>
+
+<!-- Achievement 4 -->
+<div class="card">
+<img src="9.jpg" alt="Balance Sculpture Competition">
+<div class="content">
+<h3>⚖️🏆 Championing Creativity and Balance!</h3>
+<p>On 8 January 2024, our team won the Balance Sculpture Competition organized by MECHA Club, UMS. Under the theme “Back to Equilibrium,” we designed a sculpture showcasing stability, creativity, and resilience.</p>
+<p>Highlights included applying statics mechanics, exploring equilibrium, and team collaboration. Our design withstood drone-induced disturbances and returned to balance!</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 Elite Lemirence (Aliy)	. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Azam | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+<style>
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+color: #e9eef7;
+background:
+linear-gradient(rgba(10, 20, 40, 0.65), rgba(10, 20, 40, 0.65)),
+url('1.png') center/cover no-repeat fixed;
+}
+header {
+background: rgba(31, 60, 136, 0.85);
+backdrop-filter: blur(4px);
+padding: 1rem 2rem;
+border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1100px;
+margin: 0 auto;
+}.logo {
+font-size: 1.5rem;
+font-weight: 600;
+color: #fff;
+letter-spacing: 0.5px;
+}.nav-links {
+list-style: none;
+display: flex;
+gap: 1.25rem;
+margin: 0;
+padding: 0;
+}
+.nav-links a {
+text-decoration: none;
+color: #e9eef7;
+font-weight: 400;
+padding: 0.4rem 0.6rem;
+border-radius: 4px;
+transition: color 0.2s ease, background 0.2s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: #1f3c88;
+background: #ffd700;
+}
+
+
+.hero {
+min-height: 75vh;
+display: grid;
+place-items: center;
+text-align: center;
+padding: 3rem 1.5rem;
+}
+.hero-content {
+max-width: 800px;
+margin: 0 auto;
+background: rgba(10, 20, 40, 0.35);
+border: 1px solid rgba(255, 255, 255, 0.12);
+border-radius: 12px;
+padding: 2rem;
+backdrop-filter: blur(3px);
+}
+.hero h1 {
+font-size: 3rem;
+line-height: 1.15;
+margin: 0 0 1rem;
+color: #ffffff;
+}
+.hero p {
+font-size: 1.15rem;
+margin: 0 0 1.75rem;
+color: #dbe6ff;
+}
+.btn {
+display: inline-block;
+padding: 0.75rem 1.5rem;
+background: #ffd700;
+color: #1f3c88;
+font-weight: 600;
+border-radius: 6px;
+text-decoration: none;
+transition: transform 0.15s ease, background 0.2s ease;
+box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.btn:hover { background: #ffc107; transform: translateY(-1px); }
+
+footer {
+background: rgba(31, 60, 136, 0.85);
+color: #e9eef7;
+text-align: center;
+padding: 1rem;
+border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+@media (max-width: 600px) {
+.hero h1 { font-size: 2.25rem; }
+.hero p { font-size: 1rem; }
+}
+</style>
+</head>
+<body>
+<header>
+<nav class="navbar">
+<div class="logo">Azam</div>
+<ul class="nav-links">
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="education.html">Education</a></li>
+<li><a href="achievements.html">Achievements</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+
+<section class="hero">
+<div class="hero-content">
+<h1>Hi, I'm Azam</h1>
+<p>Mechanical Engineering Student</p>
+<a href="achievements.html" class="btn">View My Achivements</a>
+</div>
+</section>
+<script type="text/javascript">
+
+document.write("Current Date is <b>"+Date()+"</b>");
+
+</script>
+
+<footer>
+<p>&copy; 2026 Elite Lemirence (Aliy)	. All rights served For IMD318 Assignment Purpose</p>
+</footer>
+</body>
+</html>
